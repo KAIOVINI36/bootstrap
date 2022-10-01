@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+  <title>Document</title>
+
+  <style>
+    body {
+      height: 100vh;
+      background-color: black;
+      background-image: url('imagens/wallpaper002.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      color: white;
+    }
+
+    header {
+      background-color: black;
+
+    }
+
+    h1 {
+      font-weight: bold;
+      text-align: center;
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+
+    #carrosel {
+      width: 40%;
+      padding: 20px;
+      margin: auto;
+      height: 60%;
+      margin-bottom: 10px;
+
+
+    }
+
+
+    footer {
+      background-color: black;
+      color: white;
+      padding: 10px;
+      text-align: center;
+
+    }
+
+    footer a {
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    footer img {
+      width: 50px;
+
+    }
+
+    @media(max-width:1090px) {
+      footer {
+        position: absolute;
+        display: block;
+        bottom: 0px;
+        width: 100%;
+      }
+
+      #carrosel {
+        min-width: 400px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Executando o Bootstrap</h1>
+  </header>
+
+
+  <section>
+    <button type="button" class="btn btn-primary">Home</button>
+    <button type="button" class="btn btn-primary">Sobre</button>
+    <button type="button" class="btn btn-primary">Serviços</button>
+    <button type="button" class="btn btn-primary">Contato</button>
+    <button type="button" class="btn btn-primary">Para Você</button>
+  </section>
+
+  <section id="carrosel">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="imagens/background002.jpg" class="d-block w-100" alt="livro">
+        </div>
+        <div class="carousel-item">
+          <img src="imagens/pexels-ryan-baker-129574.jpg" class="d-block w-100" alt="avatar..." id="avatar">
+        </div>
+        <div class="carousel-item">
+          <img src="imagens/background001.jpg" class="d-block w-100" alt="joaninha">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+
+  <footer>
+    <img src="imagens/avatar01.png" alt="">
+
+    <p>&copy Criado por <a href="https://github.com/KAIOVINI36">Kaio Vinicius</a> para o <strong>SENAI</strong></p>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
